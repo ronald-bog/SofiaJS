@@ -45,3 +45,4 @@ console.log('Hola como estas\n \'Sofia\' ' + apellido + ' Otro Apellido: ' + ape
 console.log(`Hola como estas\n'Sofia' ${apellido} otro Apellido: ${apellido2}`);
 
 
+//Clase
