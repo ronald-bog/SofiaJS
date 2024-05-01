@@ -1,0 +1,13 @@
+.vscode/
+
+# git init
+# git config --global user.email "ronald79@gmail.com"
+# git config --global user.name "Ronald Espitia"
+# git add .
+# git commit -m " "
+# git branch -M main
+# git remote add origin https://github.com/ronald-bog/SofiaJS.git
+# git push -u origin main
+
+# git branch -M main
+# git push -u origin main

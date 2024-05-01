@@ -43,6 +43,3 @@ console.log('Hola como estas\n \'Sofia\' ' + apellido + ' Otro Apellido: ' + ape
 
 //Literal Template
 console.log(`Hola como estas\n'Sofia' ${apellido} otro Apellido: ${apellido2}`);
-
-
-//Clase
