@@ -76,3 +76,10 @@ console.log(arreglo);
 // "información" array bidemensional, lo veremos mas adelante...
 let arreglo2 = [['a'],['c'],['b']]
 console.log(arreglo2[2][0]); //devuelve 'b'
+
+
+
+
+
+
+
