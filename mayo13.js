@@ -60,11 +60,14 @@ while (index < array.length) {
 //      codigo a ejecutar
 // } while (condicion);
 
-let password;
+/* let password;
 
 do {
     password = prompt('Por favor, ingrese una contraseña');
-} while (password !== 'secreto');
+} while (password !== 'secreto'); */
 
-
+let password;
+while (password !== 'secreto') {
+    password = prompt('Por favor, ingrese una contraseña');
+}
 
