@@ -24,20 +24,5 @@
 // if (false) console.log('Hola Mundo!!!');
 // else console.log('Hola Mundo else!!!');
 
-// BUCLE FOR **********
-
-// let nombres = ['Ana', 'Juan', 'Maria', 'Carlos', 'Sofia'];
-// for (let i = 0; i < nombres.length; i++) {
-//     console.log(`Nombre  ${i + 1}: ${nombres[i]}`);
-// }
-
-// for (let i = 0; i < 5; i++) {
-//     console.log("a");
-// }
-
-let devs = ['Python', 'Javascript', 'Java'];
-for (let pepito in devs) {
-    console.log(`${pepito} - ${devs[pepito]}`);
-}
 
 
