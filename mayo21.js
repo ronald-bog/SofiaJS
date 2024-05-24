@@ -5,7 +5,7 @@
 // Definicion de la funcion
 
 // funcion Void
-function saludar(){
+function saludar() {
     console.log('Hola Sofia');
 }
 
@@ -14,10 +14,14 @@ saludar();
 
 let comprobacionV = saludar();
 
-console.log(comprobacionV);
+console.log(saludar());
 
 // Funcion con Retorno
 
-function saludarR(){
+function saludarR() {
     return 'Hola Sofia';
 }
+
+let comprobacionR = saludarR();
+
+console.log(comprobacionR);
