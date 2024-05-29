@@ -30,11 +30,3 @@ function name1() {
 
 //console.log(local);
 
-// Retotorno de multiples valores en una funcion.
-function acceso() {
-    const v1 = 1;
-    const v2 = 2;
-    return [v1, v2];
-}
-
-console.log(acceso());
