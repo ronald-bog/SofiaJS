@@ -57,8 +57,15 @@ const concatenado = [...array1, ...array2];
 console.log(concatenado);
 
 // Spread en objetos
-
+//  Copiar un objeto
 const persona1 = { nombre: 'Luis', edad: 30 };
 
 const copiaPersona1 = { ...persona1 };
 console.log(copiaPersona1);
+
+
+//Combinar objetos
+const persona2 = { nombre: 'Juan', edad: 30 };
+const detalles = { ciudad: 'Madrid', profesion: 'Ingeniero' };
+const personaCompleta = { ...persona2, ...detalles };
+console.log(personaCompleta); // { nombre: 'Juan', edad: 30, ciudad: 'Madrid', profesion: 'Ingen
