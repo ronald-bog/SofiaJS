@@ -1,6 +1,6 @@
 
 // Metodo find
-// Retorna solo el elemento que cumple con una condición específica, a diferencia de filter, reduce o map que devulven arrays
+// Retorna solo el elemento que cumple con una condición específica, a diferencia de filter o map que devulven arrays
 
 const arreglo6 = [{ id: 1, descripcion: "Estudiar", completado: false },
     { id: 2, descripcion: "Lavar", completado: false },
