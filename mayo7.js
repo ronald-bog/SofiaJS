@@ -25,7 +25,7 @@ if (tipo === 'primario') {
 // console.log(Boolean(null));
 // console.log(Boolean(undefined));
 // console.log(Boolean(""));
-// [], {}//** Aplica en algunos lenguajes (Python,Php,Swift,Ruby,Perl,Go,Rust,Kotlin,C# entre otros) en JS TS no aplica por la implantación del lenguaje, en Java los valores se toman estrictamente como false y true, en C y C++ se tomarían punteros nulos o estructuras de datos vacíos que se evaluarían como falsos o similar a falsy.
+// [], {} //** Aplica FALSY en algunos lenguajes (Python,Php,Swift,Ruby,Perl,Go,Rust,Kotlin,C# entre otros) en JS TS no aplica por la implantación del lenguaje, en Java los valores se toman estrictamente como false y true, en C y C++ se tomarían punteros nulos o estructuras de datos vacíos que se evaluarían como falsos o similar a falsy. En Javascript un objeto o array vacio siempre se evaluan truthy.
 
 if ("") {
     //console.log('verdadero')
