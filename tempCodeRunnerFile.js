@@ -1,15 +1,6 @@
-const arreglo6 = [{ id: 1, descripcion: "Estudiar", completado: false },
-{ id: 2, descripcion: "Lavar", completado: false },
-{ id: 3, descripcion: "Correr", completado: false },
-{ id: 4, descripcion: "Dormir", completado: false },
-];
-
-// Funcion find
-// Retorna solo el elemento que cumple con una condición específica, a diferencia de filter, reduce o map que devulven arrays
-
-function completar(id) {
-    const buscado = arreglo6.find(v => v.id === id);
-    console.log(buscado);
-}
-
-completar(2);
+const arrayA = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
+const filtro = arrayA.filter(num => num[0] === 2);
+console.log(filtro);
+filtro[0][1] = 10;
+console.log(filtro);
+console.log(arrayA);
