@@ -1,0 +1,24 @@
+// JSON
+
+const carro = {
+    marca: "Renault",
+    cilindraje: '1600',
+    puertas: 5,
+    acccesorios: ['Radio', 'Exploradoras', 'Sunroof']
+};
+
+// Nombre del modulo
+JSON;
+
+// Convertir Objeto a JSON
+const conversion = JSON.stringify(carro);
+//console.log(JSON.stringify(carro));
+//console.log(carro);
+
+// Convertir JSON a Objeto
+
+//console.log(JSON.parse(conversion));
+
+let cualquierCosa = `{"marca":"Renault","cilindraje":"1600","puertas":5,"acccesorios":["Radio","Exploradoras","Sunroof"]}`;
+console.log('******************');
+console.log(JSON.parse(cualquierCosa));
