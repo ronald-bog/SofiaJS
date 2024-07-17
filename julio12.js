@@ -11,9 +11,11 @@ const conversion = JSON.stringify(carro);
 
 
 // commonJS
-const fs = require('fs');
+//const fs = require('fs');
 
-// module ES6, mjs o package.json
+
+
+// ES module - module ES6, extension mjs o package.json
 // import fs from 'fs'
 
 // Guardar archivo - Async
