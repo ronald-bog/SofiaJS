@@ -1,5 +1,3 @@
-//! PROMESAS
-
 const alumnos = [
     {
         nombre: 'Sofia',
@@ -18,26 +16,14 @@ const alumnos = [
     }
 ];
 
-function mostrarArray() {
-    setTimeout(() => {
-        return alumnos;
-    }, 5000);
-}
-
-//mostrarArray();
-
-//console.log(mostrarArray());
-
-//const pepito1 = 5;
-
-function mostrarArrayP() {
+/* function mostrarArrayP() {
     const promesa = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(alumnos);
         }, 5000);
     });
     return promesa;
-}
+} */
 
 function mostrarArrayP() {
     return new Promise((resolve, reject) => {
@@ -47,13 +33,10 @@ function mostrarArrayP() {
     });
 }
 
-//console.log(mostrarArrayP());
+//* async await
+async function obtenerArray() {
+    const nuevo = await mostrarArrayP();
+    console.log(nuevo);
+}
 
-//* then catch
-/* mostrarArrayP()
-    .then(res => console.log(res))
-    .catch(err => console.log('ERRORRRRRRRR'))
-    .finally(() => console.log('El proceso se realizo')); */
-
-
-
+obtenerArray();
