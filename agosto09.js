@@ -28,7 +28,7 @@ const server = http.createServer((request, response) => {
     } else if (request.url === '/parametros') {
         response.write('Estas accediendo a los parametros');
     } else if (request.url === '/') {
-        response.write('Estas en la raiz');
+        response.write('Estas en la raiz con nodemon 1');
     } else {
         response.write('No hay enpoint conocido');
     }
