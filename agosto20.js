@@ -5,6 +5,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
     const parseUrl = url.parse(req.url, true);
     const pathname = parseUrl.pathname;
+    const param = pathname.split('/');
 
     if (req.url === '/prueba') {
         console.log(req.url);
@@ -21,6 +22,12 @@ const server = http.createServer((req, res) => {
     }
     else if (pathname === '/prueba3') {
         console.log(parseUrl);
+        res.end('\nPROCESADO');
+    }
+    else if (`/${param[1]}` === '/prueba4') {
+        console.log('param procesado');
+        console.log(param[1]);
+        console.log(parseInt(param[2]));
         res.end('\nPROCESADO');
     }
     // '/prueba2/101',
