@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
             body += chunk;
         });
         req.on('end', () => { });
-        
+
     }
 
 });
@@ -42,3 +42,4 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
     console.log('Servidor esta escuchando en puerto 3000');
 });
+//
