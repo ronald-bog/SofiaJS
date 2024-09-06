@@ -1,0 +1,4 @@
+[
+  { "nombre": "sofia", "id": 1234, "num_cuenta": 9001, "saldo": 3500 },
+  { "nombre": "juan", "id": 5678, "num_cuenta": 9002, "saldo": 3500 }
+]

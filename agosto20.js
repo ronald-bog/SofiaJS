@@ -1,5 +1,6 @@
 const http = require('http');
 const url = require('url');
+const fs = require('fs');
 
 const port = 3000;
 const server = http.createServer((req, res) => {
@@ -25,10 +26,11 @@ const server = http.createServer((req, res) => {
         res.end('\nPROCESADO');
     }
     else if (`/${param[1]}` === '/prueba4') {
-        console.log('param procesado');
-        console.log(param[1]);
-        console.log(parseInt(param[2]));
-        res.end('\nPROCESADO');
+        const objDatos = JSON.parse(fs.readFileSync("./bodyCliente.json", "utf8"));
+        let idEntero = parseInt(param[2]);
+        const unCliente = objDatos.find(elemento => { 5678 === 5678; });
+        console.log(unCliente);
+
     }
     // '/prueba2/101',
 
