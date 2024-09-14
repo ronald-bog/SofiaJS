@@ -30,7 +30,6 @@ const server = http.createServer((req, res) => {
         let idEntero = parseInt(param[2]);
         const unCliente = objDatos.find(elemento => { 5678 === 5678; });
         console.log(unCliente);
-
     }
     // '/prueba2/101',
 
