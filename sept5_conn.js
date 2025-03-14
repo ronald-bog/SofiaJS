@@ -1,31 +1,18 @@
 const mysql = require('mysql2');
 
-/* const datosbase = {
-    host: 'localhost',
-    user: 'root',
-    password: '123',
-    database: 'data_flask'
-}; */
-
-const pool = mysql.createPool({
+const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '123',
     database: 'data_flask'
 });
 
-/* const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '123',
-    database: 'data_flask'
-} */
-/* connection.connect(err => {
+connection.connect(err => {
     if (err) {
         console.log('Error en conexion a la base de datos', err.stack);
         return;
     }
     console.log('Conexion exitosa a la base de datos');
-}); */
+});
 
-module.exports = pool;
+module.exports = connection;

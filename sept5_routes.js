@@ -1,7 +1,7 @@
 const connection = require('./sept5_conn');
 const http = require('http');
 const url = require('url');
-const pool = require('./sept5_conn');
+//const pool = require('./sept5_conn');
 
 const server = http.createServer((req, res) => {
     const parseUrl = url.parse(req.url);
@@ -14,10 +14,9 @@ const server = http.createServer((req, res) => {
     }
 
     else if (pathname === '/testDB') {
-        pool.query('SELECT 1', () => {
-            //pool.release();
+        connection.query('SELECT 1', () => {
         });
-        pool.end();
+        connection.end();
         res.end('Bases de datos probada');
     }
 
@@ -28,9 +27,7 @@ const server = http.createServer((req, res) => {
                 res.end('Hubo un error em la consulta');
                 return;
             }
-            result.push({ id: 10 });
-            console.log(result);
-            res.end(result);
+            res.end(JSON.stringify(result));
         });
     }
 
@@ -48,7 +45,6 @@ const server = http.createServer((req, res) => {
                     return;
                 }
                 res.end();
-                connection.end();
             });
         });
     }
